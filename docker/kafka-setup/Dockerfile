@@ -8,7 +8,7 @@ RUN rm /usr/share/java/cp-base-new/snakeyaml-*.jar \
   && wget -P /usr/share/java/cp-base-new $MAVEN_REPO/org/yaml/snakeyaml/$SNAKEYAML_VERSION/snakeyaml-$SNAKEYAML_VERSION.jar
 
 # Based on https://github.com/blacktop's alpine kafka build
-FROM python:3-alpine
+FROM python:3.13.0a3-alpine
 
 ENV KAFKA_VERSION 3.4.1
 ENV SCALA_VERSION 2.13
